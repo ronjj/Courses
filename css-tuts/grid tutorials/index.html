@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Tutorial</title>
+  <style>
+.wrapper {
+  display: grid;
+  grid-template-columns: 70% 30%;
+
+  /*
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+*/
+
+/* grid-gap does row and column gap in one line */
+  grid-gap: 1em;
+}
+
+    .wrapper > div{
+      background-color: #eee;
+      padding: 1em;
+    }
+.wrapper > div:nth-child(odd){
+  background: #ddd;
+}
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos neque vitae dicta ea autem, nisi architecto odit sapiente cum ad aliquam maiores mollitia quisquam voluptatibus. Deleniti maiores molestiae aut? Iste.
+    </div>
+    <div class="">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut voluptates assumenda odio eaque, expedita maxime sunt nesciunt? Incidunt nulla, facilis quibusdam doloremque ullam molestias iste quasi provident, voluptas harum voluptate.
+    </div>  <div class="">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos neque vitae dicta ea autem, nisi architecto odit sapiente cum ad aliquam maiores mollitia quisquam voluptatibus. Deleniti maiores molestiae aut? Iste.
+    </div>
+    <div class="">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut voluptates assumenda odio eaque, expedita maxime sunt nesciunt? Incidunt nulla, facilis quibusdam doloremque ullam molestias iste quasi provident, voluptas harum voluptate.
+    </div>
+  </div>
+</body>
+</html>
